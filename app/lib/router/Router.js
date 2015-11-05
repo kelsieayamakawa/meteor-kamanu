@@ -18,6 +18,10 @@ Router.route('/pueo', {
   name: 'Pueo'
 });
 
+Router.route('/aukahi', {
+  name: 'Aukahi'
+});
+
 Router.route('/stuff/:_id', {
   name: 'EditStuff',
   data: function() { return Stuff.findOne(this.params._id); }
