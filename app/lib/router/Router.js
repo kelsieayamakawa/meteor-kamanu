@@ -22,6 +22,10 @@ Router.route('/aukahi', {
   name: 'Aukahi'
 });
 
+Router.route('/kamanu_v6', {
+  name: 'Kamanu V6'
+});
+
 Router.route('/stuff/:_id', {
   name: 'EditStuff',
   data: function() { return Stuff.findOne(this.params._id); }
